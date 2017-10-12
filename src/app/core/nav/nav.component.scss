@@ -9,6 +9,25 @@
     width: 100%;
 
     .container-fluid {
+      .navbar-header{
+        overflow: hidden;
+        .logo-container {
+          float:left;
+          a {
+            float:left
+          }
+          .navbar-brand {
+            width: 85px;
+          }
+          .header-text {
+            margin: 15px 0;
+            color: #fff;
+          }
+        }
+        button {
+          float:right
+        }
+      }
       @media (max-width: 680px) {
         .navbar-collapse {
           background-color: GRAY;
@@ -49,7 +68,7 @@
 
       .navbar-brand {
         padding-top: 0px;
-        width:50%;
+        width: 80px;
         img {
           height: 50px;
         }
