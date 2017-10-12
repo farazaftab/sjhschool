@@ -1,41 +1,35 @@
-<header>
-    <nav>
-        <a mat-raised-button *ngFor="let item of menuItems" routerLink="{{item.link}}">
-            {{item.name | uppercase}}
-        </a>
-        <div class="flex-spacer"></div>
-        <app-search-bar></app-search-bar>
-        <button mat-icon-button [matMenuTriggerFor]="matmenu">
-            <mat-icon>public</mat-icon>
-        </button>
-        <mat-menu #matmenu="matMenu">
-            <button mat-menu-item (click)="changeLanguage('en')">
-                <mat-icon>flag</mat-icon>
-                <span>
-                English
-            </span>
-            </button>
-            <button mat-menu-item (click)="changeLanguage('es')">
-                <mat-icon>flag</mat-icon>
-                <span>
-                Español
-            </span>
-            </button>
-            <button mat-menu-item (click)="changeLanguage('pt-br')">
-                <mat-icon>flag</mat-icon>
-                <span>
-                Português
-            </span>
-            </button>
-        </mat-menu>
-        <a class="image-icon" href="{{appConfig.repositoryURL}}" target="_blank">
-            <img src="assets/images/github-circle-white-transparent.svg">
-        </a>
+<header >
+    <div class="panel panel-default logo-area">
+        <div class="panel-heading">Panel Heading</div>
+
+    </div>
+
+    <nav class="navbar navbar-inverse nav-color">
+        <div class="container-fluid no-gap strech">
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png"></a>
+            </div>
+            <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="progress-bar">
-        <mat-progress-bar
-            [color]="'primary'"
-            [mode]="progressBarMode">
-        </mat-progress-bar>
+    <section _ngcontent-c0="" class="progress-bar">
+        <mat-progress-bar _ngcontent-c0="" aria-valuemax="100" aria-valuemin="0" class="mat-progress-bar mat-primary" role="progressbar" ng-reflect-color="primary" aria-valuenow="0" ng-reflect-mode="none" mode="none"><div class="mat-progress-bar-background mat-progress-bar-element"></div><div class="mat-progress-bar-buffer mat-progress-bar-element"></div><div class="mat-progress-bar-primary mat-progress-bar-fill mat-progress-bar-element" ng-reflect-ng-style="[object Object]" style="transform: scaleX(0);"></div><div class="mat-progress-bar-secondary mat-progress-bar-fill mat-progress-bar-element"></div></mat-progress-bar>
     </section>
 </header>
