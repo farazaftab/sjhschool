@@ -1,5 +1,3 @@
-
-
 **Warning: we strongly recommend node >=v6.9.0 and npm >=3.0.0**
 
 `npm i` - Installs everything needed
