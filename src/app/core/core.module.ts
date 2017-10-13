@@ -7,6 +7,7 @@ import {LoggerService} from './logger.service';
 
 import {NavComponent} from './nav/nav.component';
 import {FooterComponent} from './footer/footer.component';
+import {FeaturecardComponent} from './featurecard/featurecard.component';
 import {SharedModule} from '../shared/modules/shared.module';
 import {RouterModule} from '@angular/router';
 import {SearchBarComponent} from './search-bar/search-bar.component';
@@ -23,11 +24,13 @@ import {Error404Component} from './error404/error-404.component';
   ],
   exports: [
     NavComponent,
-    FooterComponent
+    FooterComponent,
+      FeaturecardComponent
   ],
   declarations: [
     NavComponent,
     FooterComponent,
+      FeaturecardComponent,
     SearchBarComponent,
     Error404Component
   ],

@@ -1,7 +1,7 @@
 import {async, TestBed} from '@angular/core/testing';
 import {APP_BASE_HREF} from '@angular/common';
-import {HeroesComponent} from './heroes.component';
-import {HeroesModule} from './heroes.module';
+import {SchoolComponent} from './school.component';
+import {SchoolModule} from './school.module';
 import {TestsModule} from '../shared/modules/tests.module';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
@@ -10,7 +10,7 @@ describe('HeroesComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         TestsModule,
-        HeroesModule
+          SchoolModule
       ],
       providers: [
         {provide: APP_BASE_HREF, useValue: '/'}
@@ -20,7 +20,7 @@ describe('HeroesComponent', () => {
   }));
 
   it('should create heroes component', (() => {
-    const fixture = TestBed.createComponent(HeroesComponent);
+    const fixture = TestBed.createComponent(SchoolComponent);
     const component = fixture.debugElement.componentInstance;
     expect(component).toBeTruthy();
   }));

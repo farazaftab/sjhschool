@@ -9,20 +9,22 @@ import {HeroListComponent, RemoveHeroDialogComponent} from './hero-list/hero-lis
 import {HeroService} from './shared/hero.service';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {SchoolComponent} from './school.component';
+import {ContactComponent} from './contact/contact.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
-    SchoolComponent,
+    SchoolRoutingModule,
     ReactiveFormsModule
   ],
   declarations: [
     SchoolComponent,
     HeroListComponent,
     RemoveHeroDialogComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    ContactComponent
   ],
   entryComponents: [
     RemoveHeroDialogComponent
@@ -32,5 +34,5 @@ import {SchoolComponent} from './school.component';
   ]
 })
 
-export class HeroesModule {
+export class SchoolModule {
 }

@@ -13,7 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpLoaderFactory} from './app.translate.factory';
-import {HeroTopComponent} from './heroes/hero-top/hero-top.component';
+//import {HeroTopComponent} from './heroes/hero-top/hero-top.component';
 import {SchoolHomeComponent} from './school/home/school-home.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import {SchoolHomeComponent} from './school/home/school-home.component';
   ],
   declarations: [
     AppComponent,
-    HeroTopComponent,
+  //  HeroTopComponent,
     SchoolHomeComponent
   ],
   providers: [
