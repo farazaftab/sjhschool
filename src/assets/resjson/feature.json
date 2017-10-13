@@ -1,0 +1,20 @@
+[{
+  "cardName": "A NURTURING ENVIRONMENT",
+  "img": "assets/images/readng-kid.jpg",
+  "para": "Every School is co-led by an on-site owner and an education director who work together to make sure every family has a wonderful experience. This distinctive model also ensures children are known and appreciated for their individual gifts and personalities.",
+  "likes": "noting"
+},
+{
+  "cardName": "OUR UNIQUE APPROACH",
+  "img": "assets/images/sc-kid.jpg",
+  "para": "Our approach is grounded in accepted research on how children learn best. Children experience the deepest, most genuine learning through play and fun activities lovingly guided by highly trained teachers.",
+  "likes": "everything"
+},
+  {
+    "cardName": "COLLABORATORS IN PARENTING",
+    "img": "assets/images/teacher-kids.jpg",
+    "para": "Our highly trained teachers collaborate with parents to nurture children into respectful, confident and joyful learners. Through ongoing communication, parents and teachers can help each child become fully prepared for and excited about kindergarten.",
+    "likes": "everything"
+  }
+
+]

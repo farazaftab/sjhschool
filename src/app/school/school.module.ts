@@ -6,7 +6,9 @@ import {SchoolRoutingModule} from './school-routing.module';
 import {SharedModule} from '../shared/modules/shared.module';
 
 import {HeroListComponent, RemoveHeroDialogComponent} from './hero-list/hero-list.component';
-import {HeroService} from './shared/hero.service';
+//import {HeroService} from './shared/hero.service';
+//import {HeroService} from './shared/hero.service';
+import {SchoolFeatureService} from './shared/schoolfeature.service';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {SchoolComponent} from './school.component';
 import {ContactComponent} from './contact/contact.component';
@@ -21,7 +23,7 @@ import {ContactComponent} from './contact/contact.component';
   ],
   declarations: [
     SchoolComponent,
-    HeroListComponent,
+   // HeroListComponent,
     RemoveHeroDialogComponent,
     HeroDetailComponent,
     ContactComponent
@@ -30,7 +32,8 @@ import {ContactComponent} from './contact/contact.component';
     RemoveHeroDialogComponent
   ],
   providers: [
-    HeroService
+   // HeroService,
+    SchoolFeatureService
   ]
 })
 

@@ -12,7 +12,8 @@
         "favicon.ico",
         "sitemap.xml",
         "googled41787c6aae2151b.html",
-        "CNAME"
+        "CNAME",
+        "resjson/feature.json"
       ],
       "index": "index.html",
       "main": "main.ts",

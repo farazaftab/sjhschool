@@ -39,9 +39,10 @@
     </div >
 
     <div class = "row">
-        <app-featurecard></app-featurecard>
-        <app-featurecard></app-featurecard>
-        <app-featurecard></app-featurecard>
+        <app-featurecard *ngFor="let feature of schoolfeature"
+                    [feature]="feature">
+        </app-featurecard>
+
     </div>
 
 
