@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
  /* {path: '', component: HeroTopComponent},*/
   {path: '', component: SchoolHomeComponent},
-  {path: 'contactus', loadChildren: './school/school.module#SchoolModule'},
+  {path: 'school', loadChildren: './school/school.module#SchoolModule'},
    // {path: 'contactus', component:ContactComponent},
   //{path: AppConfig.routes.heroes, loadChildren: './heroes/heroes.module#HeroesModule'},
   {path: AppConfig.routes.error404, component: Error404Component},

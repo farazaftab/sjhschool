@@ -28,14 +28,14 @@ export class AppComponent {
       if (event instanceof NavigationEnd) {
         switch (event.urlAfterRedirects) {
           case '/':
-            this.title.setTitle('Angular Example App');
+            this.title.setTitle('Welcome to SCHOOL OF JOY AND HAPPINESS');
             this.meta.updateTag({
               name: 'description',
-              content: 'Angular 4 Example app with Angular CLI, Angular Material and more'
+              content: 'SCHOOL OF JOY AND HAPPINESS, Itawa english school, sjhitawa.com, sjhitawa'
             });
             break;
           case '/' + AppConfig.routes.heroes:
-            this.title.setTitle('Heroes list');
+            this.title.setTitle('Welcome to SCHOOL OF JOY AND HAPPINESS');
             this.meta.updateTag({
               name: 'description',
               content: 'List of super-heroes'

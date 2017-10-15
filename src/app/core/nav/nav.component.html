@@ -1,15 +1,30 @@
 <header >
-    <div class="panel panel-default logo-area" style="display:none">
-        <div class="panel-heading">Panel Heading</div>
+    <div  class="container">
+        <div  class="row">
+            <div  class="col-md-5 col-sm-5 col-xs-12 logo" id="logo" style="display: flex;">
+                <a  href="/"><img _ngcontent-c0="" alt="Logo" src="assets/images/logo.png" style=" height: 50px; width: 78px;"></a>
+                <a  class="header-text" href="#" rel="home" style=" padding-top: 15px;">School of Joy and Happiness</a>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="hidden-xs phone" id="phone">
+                    <strong >+91-9636718918</strong><br>Admissions department</div>
+                <div class="menu-top">
+                    <ul >
+                        <li><a href="index.php" title="Home">Home</a> |</li>
+                        <li ><a href="gallery.php" title="Contact">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+
     <nav class="navbar navbar-inverse nav-color">
-        <div class="container-fluid no-gap strech" >
-            <div class="navbar-header ">
-                <div class="logo-container">
-                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
-                    <a href="#" rel="home" class="header-text">School of Joy and Happiness</a>
+        <div class="container no-gap strech" >
+            <div class="navbar-header">
+                <div class="hidden-sm hidden-lg phone-menu ">
+                    Menu
                 </div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
                     <span class="icon-bar"></span>
@@ -21,8 +36,8 @@
             <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a routerLink="/contactus">Contact</a></li>
-                    <li><a >Page 2</a></li>
+                    <li><a routerLink="/school/contactus">Contact</a></li>
+                    <li><a routerLink="/school/gallery">Gallery</a></li>
                     <li><a >Page 3</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

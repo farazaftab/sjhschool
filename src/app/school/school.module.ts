@@ -9,9 +9,11 @@ import {HeroListComponent, RemoveHeroDialogComponent} from './hero-list/hero-lis
 //import {HeroService} from './shared/hero.service';
 //import {HeroService} from './shared/hero.service';
 import {SchoolFeatureService} from './shared/schoolfeature.service';
+import {ContactusService} from './shared/contactus.service';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {SchoolComponent} from './school.component';
 import {ContactComponent} from './contact/contact.component';
+import {GalleryComponent} from './gallery/gallery.component';
 
 @NgModule({
   imports: [
@@ -23,17 +25,19 @@ import {ContactComponent} from './contact/contact.component';
   ],
   declarations: [
     SchoolComponent,
-   // HeroListComponent,
+    HeroListComponent,
     RemoveHeroDialogComponent,
     HeroDetailComponent,
-    ContactComponent
+    ContactComponent,
+      GalleryComponent
   ],
   entryComponents: [
     RemoveHeroDialogComponent
   ],
   providers: [
    // HeroService,
-    SchoolFeatureService
+    SchoolFeatureService,
+    ContactusService
   ]
 })
 

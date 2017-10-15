@@ -10,10 +10,10 @@ export const AppConfig: IAppConfig = {
     error404: '404'
   },
   endpoints: {
-    heroes: 'https://nodejs-example-app.herokuapp.com/heroes'
+      contactus: '/backend/email.php'
   },
   votesLimit: 3,
   topHeroesLimit: 4,
   snackBarDuration: 3000,
-  repositoryURL: 'https://github.com/Ismaestro/angular4-example-app'
+  repositoryURL: 'https://github.com/farazaftab'
 };

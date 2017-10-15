@@ -19,15 +19,15 @@ export class NavComponent {
   private translateService: TranslateService;
 
   constructor(@Inject(APP_CONFIG) appConfig: IAppConfig,
-              private progressBarService: ProgressBarService,
+              //private progressBarService: ProgressBarService,
               translateService: TranslateService) {
     this.appConfig = appConfig;
     this.translateService = translateService;
     this.loadMenus();
 
-    this.progressBarService.updateProgressBar$.subscribe((mode: string) => {
+    /*this.progressBarService.updateProgressBar$.subscribe((mode: string) => {
       this.progressBarMode = mode;
-    });
+    });*/
   }
 
   changeLanguage(language: string): void {

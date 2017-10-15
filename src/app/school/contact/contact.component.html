@@ -12,45 +12,89 @@
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
-                <form>
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
                     <div class="row">
                         <div class="col-md-6">
+
                             <div class="form-group">
-                                <label for="name">
-                                    Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                <label for="name">Name</label>
+                                <input type="text" validate class="form-control" id="name" placeholder="Enter name"
+                                       required
+                                       [(ngModel)]="model.name" name="name"
+                                       #name="ngModel">
+                                <div [hidden]="name.valid || name.pristine"
+                                     class="alert alert-danger">
+                                    Name is required
+                                </div>
                             </div>
+
+
                             <div class="form-group">
-                                <label for="email">
-                                    Email Address</label>
+                                <label for="phone">Phone</label>
+                                <input type="text" validate class="form-control" id="phone" placeholder="Enter Phone"
+                                       required
+                                       [(ngModel)]="model.phone" name="phone"
+                                       #phone="ngModel">
+                                <div [hidden]="phone.valid || phone.pristine"
+                                     class="alert alert-danger">
+                                    Phone is required
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
                                 <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+
+                                <input type="text" validate class="form-control" id="email" placeholder="Enter Email"
+                                       required
+                                       [(ngModel)]="model.email" name="email"
+                                       #email="ngModel">
+                                </div>
+                                <div [hidden]="email.valid || email.pristine"
+                                     class="alert alert-danger">
+                                    Email is required
+                                </div>
                             </div>
+
                             <div class="form-group">
-                                <label for="subject">
-                                    Subject</label>
-                                <select id="subject" name="subject" class="form-control" required="required">
-                                    <option value="na" selected="">Choose One:</option>
-                                    <option value="service">General Customer Service</option>
-                                    <option value="suggestions">Suggestions</option>
-                                    <option value="product">Product Support</option>
+                                <label for="reason"> Subject</label>
+                                <select class="form-control" id="reason"
+                                        required
+                                        [(ngModel)]="model.reason" name="reason"
+                                        #reason="ngModel">
+                                    <option disabled hidden [value]="selectUndefinedOptionValue">-- select --</option>
+                                    <option *ngFor="let reason of subjectval" [value]="reason">{{reason}}</option>
                                 </select>
+                                <div [hidden]="reason.valid || reason.pristine" class="alert alert-danger">
+                                    Subject is required
+                                </div>
                             </div>
+
                         </div>
-                        <div class="col-md-6">
+
+
+                      <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name">
                                     Message</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                      placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25"
+                                      placeholder="Message"
+                                              [(ngModel)]="model.message" name="message"
+                                              #message="ngModel"
+                                    ></textarea>
                             </div>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LchZTQUAAAAALwUOQa417KCBbg01sPVB_u97NFb"></div>
+
+                        <!--
+                                               <div class="g-recaptcha" data-sitekey="6LchZTQUAAAAALwUOQa417KCBbg01sPVB_u97NFb"></div>
+
+                                                -->
 
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs"
+                                    [disabled]="!contactForm.form.valid">
                                 Send Message</button>
                         </div>
                     </div>

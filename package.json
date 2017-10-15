@@ -1,9 +1,9 @@
 {
-  "name": "angular-example-app",
+  "name": "sjhschool",
   "version": "2.4.0",
   "license": "MIT",
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0",
     "build": "ng build --prod",
     "deploy": "ng build --prod --base-href / && angular-cli-ghpages",
     "test": "ng test --watch=false --code-coverage",
@@ -32,7 +32,8 @@
     "@angular/router": "4.4.4",
     "core-js": "2.5.1",
     "rxjs": "5.4.3",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.18",
+    "font-awesome": "~4.7.0"
   },
   "devDependencies": {
     "@angular/cdk": "2.0.0-beta.12",

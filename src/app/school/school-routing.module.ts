@@ -5,6 +5,7 @@ import {HeroListComponent} from './hero-list/hero-list.component';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {SchoolComponent} from './school.component';
 import {ContactComponent} from './contact/contact.component';
+import {GalleryComponent} from './gallery/gallery.component';
 
 
 const heroesRoutes: Routes = [
@@ -12,7 +13,8 @@ const heroesRoutes: Routes = [
     path: '',
     component: SchoolComponent,
     children: [
-      {path: '', component: ContactComponent},
+      {path: 'contactus', component: ContactComponent},
+      {path: 'gallery', component: GalleryComponent},
       {path: ':id', component: HeroDetailComponent}
     ]
   }
