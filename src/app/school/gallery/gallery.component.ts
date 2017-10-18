@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {SchoolFeatureService} from '../shared/schoolfeature.service';
 
 
 @Component({
@@ -7,9 +8,12 @@ import {Component} from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
+    galleryData: any ;
 
-
-    constructor() {
+    constructor(private schoolFeatureService: SchoolFeatureService) {
+        this.schoolFeatureService.getGalleryPageProperties().subscribe((data) => {
+            this.galleryData = data;
+        });
 
     }
   /*heroes: Hero[] = null;

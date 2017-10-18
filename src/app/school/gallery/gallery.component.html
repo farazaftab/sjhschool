@@ -28,62 +28,12 @@
                     <a data-fancybox="gallery" href="assets/images/heroes/1.jpg"><img src="assets/images/heroes/1.jpg"></a>-->
 
 
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/1.jpg" title="Glimpse of Picnic - Deva Farms " class="fancybox" rel="gallery1">
+                    <div class="col-md-4 picture" *ngFor="let imageObj of (galleryData ? galleryData : []);">
+                        <a data-fancybox="gallery" href="{{imageObj.img}}" title="{{imageObj.title}}" class="fancybox" rel="gallery1">
                             <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img  src="assets/images/heroes/1.jpg" alt="" class="img-responsive">
+                            <img  src="{{imageObj.img}}" alt="" class="img-responsive">
                         </a>
                     </div>
-
-                    <div class="col-md-4 picture">
-                        <a  data-fancybox="gallery" href="assets/images/heroes/2.jpg" title="Children's Day" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/2.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/3.jpg" title="Library" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/3.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/4.jpg" title="Annual Function" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/4.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/5.jpg" title="Annual Function" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/5.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/6.jpg" title="STAFF" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/6.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/7.jpg" title="Assembley" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/7.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 picture">
-                        <a data-fancybox="gallery" href="assets/images/heroes/8.jpg" title="Building" class="fancybox" rel="gallery1">
-                            <span class="photo_icon" style="opacity: 0; display: inline;"></span>
-                            <img src="assets/images/heroes/8.jpg" alt="" class="img-responsive">
-                        </a>
-                    </div>
-
 
                 </div>
 

@@ -14,6 +14,7 @@ import {AppConfig} from '../../config/app.config';
 })
 export class SchoolHomeComponent {
   schoolfeature: SchoolFeature[] = null;
+  homeData: any ;
   canVote = false;
 
   constructor(private schoolFeatureService: SchoolFeatureService) {
@@ -21,6 +22,12 @@ export class SchoolHomeComponent {
     this.schoolFeatureService.getAllHeroes().subscribe((schoolfeture) => {
       this.schoolfeature = schoolfeture;
     });
+
+      this.schoolFeatureService.getHomePageProperties().subscribe((data) => {
+        //alert(JSON.stringify(data.carousel[2].img));
+          this.homeData = data;
+      });
+
   }
   
 }

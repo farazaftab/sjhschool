@@ -45,4 +45,25 @@ export class SchoolFeatureService {
   }
 
 
+    getHomePageProperties(): Observable<any> {
+
+        return this.http.get('../../assets/resjson/home.json')
+            .map(response => {
+                this.request$.emit('finished');
+                return response;
+            })
+            .catch(error => this.handleError(error));
+    }
+
+    getGalleryPageProperties(): Observable<any> {
+
+        return this.http.get('../../assets/resjson/gallery.json')
+            .map(response => {
+                this.request$.emit('finished');
+                return response;
+            })
+            .catch(error => this.handleError(error));
+    }
+
+
 }
